@@ -297,37 +297,150 @@
 
 //CLASSES
  
-class Human{
-    //properties
-    age=22;         //public(class ke andar bahar kahi bhu access kar sakte hai)
-    #wt=60;        //private(clas ke bahar use nhi kar skate)
-    ht=150;
+// class Human{
+//     //properties
+//     age=22;         //public(class ke andar bahar kahi bhu access kar sakte hai)
+//     #wt=60;        //private(clas ke bahar use nhi kar skate)
+//     ht=150;
 
-    constructor(newAge,newHeight,newWeight){
-        this.age=newAge;
-        this.ht=newHeight;
-        this.#wt=newWeight;
-    }
+//     constructor(newAge,newHeight,newWeight){
+//         this.age=newAge;
+//         this.ht=newHeight;
+//         this.#wt=newWeight;
+//     }
 
-    //behaviour
-    walking(){
-        console.log(`I am walking`);
-    }
-    running(){
-        console.log("I am running");
-    }  
+//     //behaviour
+//     walking(){
+//         console.log(`I am walking`);
+//     }
+//     running(){
+//         console.log("I am running");
+//     }  
 
-    get fetchWeight(){
-        return this.#wt;
-    }
+//     get fetchWeight(){
+//         return this.#wt;
+//     }
 
-    set modifyingWeight(val){
-        this.#wt=val;
-    }
-}
+//     set modifyingWeight(val){
+//         this.#wt=val;
+//     }
+// }
 
-let obj1=new Human(23,160,65);
-console.log(obj1.age);
-// console.log(obj1.#wt);   error private to cure this error below is the code
-console.log(obj1.fetchWeight);
-obj1.walking();
+// let obj1=new Human(23,160,65);
+// console.log(obj1.age);
+// // console.log(obj1.#wt);   error private to cure this error below is the code
+// console.log(obj1.fetchWeight);
+// obj1.walking();
+
+
+
+//1 Math->object  (math 1 object hai)
+// console.log(Math.PI);
+// console.log(Math.max(20,30,40,50));
+// console.log(round(1.2));
+// console.log(Math.ceil(1.1));
+// //Math.abs    Math.sqrt()      Math.pow()
+
+//2 date->object
+// let curr=new Date();
+// console.log(curr);
+
+
+
+//onjects are dynamic in nature bcoz hm runtime pe uski def chnage kr sakte hai
+// let obj={
+//     name:"Vishal",
+//     age:22,
+//     wt:60
+// };
+// obj.age=24;
+// console.log(obj);
+
+
+//object cloning
+//1.spread operator
+//  let src={
+//     name:"Vishal",
+//     age:22,
+//     wt:60
+// };
+// let des={...src};
+// src.age=25;
+// console.log(`src : ${src.age}`);     //25
+// console.log(`des : ${des.age}`);     //22   that means src and des to differenr obejcts
+
+//2.assign
+// let src={
+//     name:"Vishal",
+//     age:22,
+//     wt:60
+// };
+// let des=Object.assign({},src);
+// console.log(des);
+
+//3. iteration
+// let obj={
+//     name:"Vishal",
+//     age:22,
+//     wt:60
+// };
+
+// let des={};
+// for(let key in obj){
+//     let newKey=key;
+//     let newVal=obj[key];
+
+//     //insert
+//     des[newKey]=newVal;
+// }
+
+// console.log(des);
+
+
+//Garbage collector
+// 1 memory management toll hai jo aesi memory jo use me nhi hai usse free karvata hai
+
+
+//ERROR HANDING IN JAVA SCRIPT
+// compile time=code execute hone se pehle
+// run time=while code is executing
+
+
+//compile time
+// console.log(1;     //syntax error
+
+//runtime error
+// console.log(x);          //refernec error
+
+
+//Handling  of error
+//->try catch block
+ 
+
+// try{
+//     console.log(x);
+// }
+// catch(e){
+//     //yaha define krte hai ki error ke sath kya krte hai
+//     //retry logic
+//     //custom error
+//     console.log("hey there in catch block");
+//     console.log("Your error is :", e);
+// }
+// finally{
+//     console.log("I will always run");
+// } 
+
+
+//Custom error
+// try{
+//     console.log(x);
+// }
+// catch(e){
+//     throw new Error("bhai pehle declare print krne se pehle");
+// }
+
+// let errorCode=101;
+// if(errorCode==101){
+//     throw new Error("Invalid json");
+// }
