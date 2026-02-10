@@ -444,3 +444,27 @@
 // if(errorCode==101){
 //     throw new Error("Invalid json");
 // }
+
+
+
+
+ 
+
+//===JS Dome manipulation(Document Object Model)===///
+//html code ko javascript object me convert kr dete hai use bolte hai document
+// characters--->tags--->token--->node--->DOM
+
+// BOM(browser object model) 
+                                    
+
+
+
+
+
+//===Browser Events===//
+// ->Event:Any announcement
+//->Event target: 1 aesi entity jaha par event recive hua hai   ex=button on a website 
+// website button
+// ex: event->click,button->event target ,video_running->action/behaviour  ||ese action ya behaviou ko 1 location pe rakte hai jise kehte hai event listener
+
+ 
