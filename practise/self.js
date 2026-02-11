@@ -468,3 +468,13 @@
 // ex: event->click,button->event target ,video_running->action/behaviour  ||ese action ya behaviou ko 1 location pe rakte hai jise kehte hai event listener
 
  
+// Phase Of Event
+//at target phase: target elemt tak pahuch chuke ho jaha par aapne event perform kara tha 
+//captutring phase: jab app target element tk pahucha jata hai
+//Bubbling Phase : jab aap apne parent ke pas wapad jate ho jab tk root element na mile
+
+
+
+//evnt Object
+// jab bhi event trigger hota hai to vo addEventListener ko ,event type ka object send krta hai ,phir aap event ko kisi 
+// bhi tareke se use kr sakte hai ya access kr sakte hai
