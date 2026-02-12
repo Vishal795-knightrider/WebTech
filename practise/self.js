@@ -478,3 +478,7 @@
 //evnt Object
 // jab bhi event trigger hota hai to vo addEventListener ko ,event type ka object send krta hai ,phir aap event ko kisi 
 // bhi tareke se use kr sakte hai ya access kr sakte hai
+
+
+//Reflow:process of calculating position /dimesnsions of element    //slower
+//Repaint:process of displaying content/element pixel by pixel      //faster 
