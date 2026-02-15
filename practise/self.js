@@ -482,3 +482,109 @@
 
 //Reflow:process of calculating position /dimesnsions of element    //slower
 //Repaint:process of displaying content/element pixel by pixel      //faster 
+
+
+// document ek built-in JavaScript object hota hai jo poori HTML page ko represent karta hai.
+
+// ➡️ Jab browser HTML load karta hai, to wo us page ka DOM bana deta hai
+// ➡️ Us DOM ka entry point hota hai → document
+
+
+
+
+
+// Access Elements (DOM Selection)
+// // By ID
+// document.getElementById("fpara");
+
+// // By Class Name (HTMLCollection return karta hai)
+// document.getElementsByClassName("fpara");
+
+// // By Tag Name
+// document.getElementsByTagName("p");
+
+// // CSS Selector based
+// document.querySelector("#fpara");   // id fpara (sirf FIRST element)
+// document.querySelector(".fpara");   // class fpara (sirf FIRST element)
+// document.querySelector("p");        // first <p> tag
+
+// // Multiple elements ke liye
+// document.querySelectorAll("p");     // NodeList of all <p>
+
+
+// 👉 querySelector = 1 element
+// 👉 querySelectorAll = multiple elements
+
+// 🔹 Update Existing Element
+// // innerHTML
+// // get
+// button.innerHTML;
+
+// // set
+// button.innerHTML = "<p>Hello Jee</p>";
+
+// // outerHTML (poora element replace kar deta hai)
+// element.outerHTML = "<h2>New Heading</h2>";
+
+// // textContent
+// // code jaisa likha hai waisa hi show karta hai
+// element.textContent = "<b>Hello</b>";
+
+// // innerText
+// // UI me jaisa render hota hai waisa hi dikhata hai
+// element.innerText = "Hello";
+
+// 🔹 Add Element
+// let fHeading = document.createElement("h1");
+// fHeading.textContent = "My name is Vishal";
+
+// // kisi tag ke andar add karna ho
+// document.body.appendChild(fHeading); // last me add hota hai
+
+// 🔹 Decide Position to Add Element
+// // insertAdjacentElement(position, element)
+
+// let mydiv = document.querySelector("#mydiv");
+// let newElement = document.createElement("span");
+// newElement.textContent = "Vishal Kashyap";
+
+// mydiv.insertAdjacentElement("beforebegin", newElement);
+
+// Positions:
+
+// beforebegin → element ke bahar, upar
+
+// afterbegin → element ke andar, start me
+
+// beforeend → element ke andar, end me
+
+// afterend → element ke bahar, niche
+
+// 🔹 Remove Element
+// let parent = document.querySelector("#mydiv");
+// let child = document.querySelector("#fpara");
+
+// parent.removeChild(child);
+
+
+// (Modern way 👇)
+
+// child.remove();
+
+// 🔹 Changing CSS Using JS
+// element.style.color = "red";
+// element.style.backgroundColor = "yellow";
+
+// // multiple CSS ek sath
+// element.style.cssText = "color:red; font-size:20px;";
+
+// 🔹 Other Useful Functions
+// // attributes
+// element.setAttribute("id", "newId");
+
+// // class handling
+// element.className = "box active";
+
+// element.classList.add("active");
+// element.classList.remove("box");
+// element.classList.toggle("dark");
