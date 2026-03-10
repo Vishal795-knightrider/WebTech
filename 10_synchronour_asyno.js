@@ -9,7 +9,7 @@
 //     console.log("Hello,World");
 // }
 // console.log("end");
-
+ 
 //problem
 // ui freezes
 // app feels slow
@@ -38,14 +38,14 @@
 
 
 // below is synchroonus ex
-function greet(name){
-    console.log("Heloo "+name);
-}
-function processUserInput(callback){
-    let name="Abhishek";
-    callback(name);
-}
-processUserInput(greet);    //greet is passed as an argument
+// function greet(name){
+//     console.log("Heloo "+name);
+// }
+// function processUserInput(callback){
+//     let name="Abhishek";
+//     callback(name); 
+// }
+// processUserInput(greet);    //greet is passed as an argument
 
 
 
@@ -53,3 +53,17 @@ processUserInput(greet);    //greet is passed as an argument
 // What is Promises in jAavscipt
 // A promise is an object that represents the future result of an asynochronous operation.
 
+function orderFood(callbacks){
+    console.log('Ordering foor...');
+}
+
+setTimeout(function(){
+    console.log("Food is ready.");
+    callbacks();
+},3000);
+
+function eatFood(){
+    console.log("Eating food...");
+}
+
+orderFood(eatFood);

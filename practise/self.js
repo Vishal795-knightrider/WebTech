@@ -172,9 +172,9 @@
 // console.log(ans);
 
 
-// arr.map((num,ind)=>{
-//     console.log(num);
-//     console.log(ind); 
+// arr.map((num,idx)=>{
+// console.log(num);
+// console.log(idx);
 // })
 
 //FILTER
@@ -224,7 +224,7 @@
 //     console.log(`Number: ${val},Index: ${idx}`);
 // })
 
-//->for in 
+// ->for in 
 // let obj={
 //     name:"Vishal",
 //     age:25,
@@ -260,7 +260,7 @@
 // }
 
 // console.log(x);     //undefined kyuki var ki declaration
-// var x=20;         line 262 ke uper shift ho gyi par value nhi hui hai fn ke case me fn pura hota hai
+// var x=20;         //line 262 ke uper shift ho gyi par value nhi hui hai fn ke case me fn pura hota hai
 
 
 //fn passing

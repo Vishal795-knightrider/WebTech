@@ -14,11 +14,11 @@
 // console.log(my);
 
 // function scope example
-function demofunction(){
-    var my = 30;
-    console.log(my);
-}
-demofunction();
+// function demofunction(){
+//     var my = 30;
+//     console.log(my);
+// }
+// demofunction();
 
 // console.log(my); // ReferenceError (outside function)
 
