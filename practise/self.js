@@ -56,8 +56,8 @@
 
 
 //ternary
-// let age=20;
-// let ans=(age>18) ? "can vote" : "not able to vote";
+// let age=15;
+// let ans=(age>18) ? "you can vote" : "you cannot vote";
 // console.log(ans); 
 
 
