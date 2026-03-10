@@ -13,3 +13,10 @@ let div = (a, b) => {
     return res;
 };
 console.log(div(14, 2));
+
+
+let ok=(x,y)=>{
+    let ans=x**y;
+    return ans;
+}
+console.log(ok(2,3))
